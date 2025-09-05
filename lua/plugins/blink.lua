@@ -7,7 +7,14 @@ return {
 		completion = {
 			menu = {
 				scrollbar = false,
-			}
+				draw = {
+					columns = {
+						{ "kind_icon", "kind", gap = 2 },
+						{ "label" },
+						{ "source_name" },
+					}
+				},
+			},
 		},
 	},
 	opts_extend = { "sources.default" }
